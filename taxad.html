@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Taxad</h1>
+    <p>Indicadores do Banco Central + cotações da B3</p>
+  </header>
+
+  <section>
+    <h2>Indicadores</h2>
+    <div id="indicadores">
+      <div class="estado-vazio">Carregando...</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ações</h2>
+    <div class="busca">
+      <input id="input-ticker" type="text" placeholder="Ex: PETR4, VALE3, ITUB4" />
+      <button id="btn-buscar">Buscar</button>
+    </div>
+    <div id="lista-acoes">
+      <div class="estado-vazio">Digite um código de ação e clique em Buscar.</div>
+    </div>
+  </section>
+
+  <footer>
+    Projeto de estudo — Taxad
+  </footer>
+
+  <script src="taxad.js"></script>
+
+</body>
+</html>

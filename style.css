@@ -1,0 +1,116 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+header {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+header p {
+  color: #555555;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+section h2 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 6px;
+}
+
+/* Grid simples para os cards de indicadores */
+#indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 14px;
+}
+
+.card .label {
+  color: #555555;
+  font-size: 0.85rem;
+}
+
+.card .valor {
+  font-size: 1.3rem;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+/* Busca de ações */
+.busca {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.busca input {
+  flex: 1;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.busca button {
+  border: 1px solid #1a1a1a;
+  background: #1a1a1a;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0 18px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.acao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+.acao .symbol { font-weight: bold; }
+.acao .nome { color: #555555; font-size: 0.8rem; }
+.acao .preco { text-align: right; }
+
+.positivo { color: #1a7a1a; }
+.negativo { color: #b02a2a; }
+
+.estado-vazio {
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 12px;
+  border-top: 1px solid #cccccc;
+  color: #888888;
+  font-size: 0.8rem;
+}
